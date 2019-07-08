@@ -42,7 +42,7 @@ Data management and movement\
 Overview of metagenomics data collection\
 
 ## Day 2: 
-*9:00 AM to 5 :00 PM* \
+*9:00 AM to 5:00 PM* \
 Quality control and pre-assessment of the data\
 Introduction to metagenome assembly and assembly statistics\
 Installing programs locally \
