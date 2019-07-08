@@ -1,9 +1,9 @@
 # Metagenomic analyis workshop
 The National Center for Genome Analysis Support (NCGAS) offers a three-day workshop on High Performance Computing (HPC) usage and metagenomic analysis
 
-The National Center for Genome Analysis Support (NCGAS) offers a three-day workshop on High Performance Computing (HPC) usage and metagenomic analysis. 
-Dates – Oct 7th to 9th, 2019 
-Location – Bloomington, IN 
+The National Center for Genome Analysis Support (NCGAS) offers a three-day workshop on High Performance Computing (HPC) usage and metagenomic analysis. \
+Dates – Oct 7th to 9th, 2019 \
+Location – Bloomington, IN \
 Registration – https://redcap.uits.iu.edu/surveys/?s=NYE8DET3EN 
 
 # Workshop Information 
