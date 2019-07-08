@@ -31,24 +31,24 @@ Participants should leave with the following knowledge:
 Participant data will not be analyzed during the workshop (that takes more time than we have!), but the entire pipeline will be used by participants with smaller scale demo data. We can also schedule online meetings after the workshop to discuss your data. 
 
 # Schedule
-## Day 1: 8:00 AM to 5:00 PM 
-Introduction to NCGAS staff
-Introduction to clusters and usage
-Optimizing job submission 
-Data center tour
-Data management and movement 
-Overview of metagenomics data collection
+## Day 1: 8:00 AM to 5:00 PM \
+Introduction to NCGAS staff \
+Introduction to clusters and usage\
+Optimizing job submission \
+Data center tour\
+Data management and movement\ 
+Overview of metagenomics data collection\
 
-## Day 2: 9:00 AM to 5 :00 PM 
-Quality control and pre-assessment of the data
-Introduction to metagenome assembly and assembly statistics
-Installing programs locally 
-Assembling metagenome assembled genomes and quality assessment 
-Taxa and function identification
-Downstream analysis
+## Day 2: 9:00 AM to 5 :00 PM \
+Quality control and pre-assessment of the data\
+Introduction to metagenome assembly and assembly statistics\
+Installing programs locally \
+Assembling metagenome assembled genomes and quality assessment\ 
+Taxa and function identification\
+Downstream analysis\
 
-## Day 3 9:00 AM to 1:00 PM
-Adding more datasets from SRA
+## Day 3 9:00 AM to 1:00 PM\
+Adding more datasets from SRA\
 Visualization using R 
  
 
