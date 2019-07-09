@@ -6,6 +6,7 @@ The National Center for Genome Analysis Support (NCGAS) offers a three-day works
 **Dates** – Oct 7th to 9th, 2019 \
 **Location** – Bloomington, IN \
 **Registration** – https://redcap.uits.iu.edu/surveys/?s=NYE8DET3EN 
+**Deadline to apply** - August 15th, 2019 
 
 # Workshop Information 
 The workshop consists of discussions, lectures and hands-on tutorials, to cover topics important to constructing and analyzing metagenomic datasets. Material covers availability of HPC resources, and how to access these resources, while learning how to assemble and annotate metagenomics datasets. The goal of this workshop is to provide a comprehensive preparation for metagenomic analysis and other bioinformatic tasks. 
