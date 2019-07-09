@@ -5,7 +5,7 @@ The National Center for Genome Analysis Support (NCGAS) offers a three-day works
 
 **Dates** – Oct 7th to 9th, 2019 \
 **Location** – Bloomington, IN \
-**Registration** – https://redcap.uits.iu.edu/surveys/?s=NYE8DET3EN 
+**Registration** – https://redcap.uits.iu.edu/surveys/?s=NYE8DET3EN \
 **Deadline to apply** - August 15th, 2019 
 
 # Workshop Information 
