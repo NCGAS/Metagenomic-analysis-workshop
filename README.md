@@ -20,15 +20,15 @@ Getting Started on Unix Walkthrough (pdf) (http://pages.iu.edu/~ss93/tutorials/G
 Code Academy (https://www.codecademy.com/catalog/subject/all) 
 
 # Objectives
-Participants should leave with the following knowledge:
-•	Familiarity with nationally available compute resources
-•	An understanding of the differences, pros, and cons of VMs, Gateways, Clusters, and Clouds
-•	How to run and optimize a job submission on a cluster
-•	How to manage large data sets and move data between resources
-•	Basic steps in software installation and how to reach out for help when running into errors
-•	How to run metagenomics assembly and annotation 
-•	Ability to reconstruct metagenome assembled genomes and check their quality
-•	How to get help for both genomic and computational questions
+Participants should leave with the following knowledge:\
+- Familiarity with nationally available compute resources\
+- An understanding of the differences, pros, and cons of VMs, Gateways, Clusters, and Clouds\
+- How to run and optimize a job submission on a cluster \
+- How to manage large data sets and move data between resources \
+- Basic steps in software installation and how to reach out for help when running into errors \
+- How to run metagenomics assembly and annotation \
+- Ability to reconstruct metagenome assembled genomes and check their quality \
+- How to get help for both genomic and computational questions \
 
 Participant data will not be analyzed during the workshop (that takes more time than we have!), but the entire pipeline will be used by participants with smaller scale demo data. We can also schedule online meetings after the workshop to discuss your data. 
 
