@@ -1,4 +1,4 @@
-# Metagenomic analysis workshop
+# Metagenomic analysis workshop Fall 2019
 The National Center for Genome Analysis Support (NCGAS) offers a three-day workshop on High Performance Computing (HPC) usage and metagenomic analysis
 
 The National Center for Genome Analysis Support (NCGAS) offers a three-day workshop on High Performance Computing (HPC) usage and metagenomic analysis. 
