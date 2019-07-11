@@ -32,7 +32,7 @@ Participants should leave with the following knowledge:\
 
 Participant data will not be analyzed during the workshop (that takes more time than we have!), but the entire pipeline will be used by participants with smaller scale demo data. We can also schedule online meetings after the workshop to discuss your data. 
 
-# Schedule
+# Agenda
 ## Day 1: 
 *8:00 AM to 5:00 PM* \
 Introduction to NCGAS staff \
