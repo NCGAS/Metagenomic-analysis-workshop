@@ -39,7 +39,7 @@ Introduction to NCGAS staff \
 Introduction to clusters and usage\
 Optimizing job submission \
 Data center tour\
-Data management and movement\ 
+Data management and movement \ 
 Overview of metagenomics data collection\
 
 ## Day 2: 
@@ -56,4 +56,5 @@ Downstream analysis\
 Adding more datasets from SRA\
 Visualization using R 
  
-
+# Contact us 
+If you have any questions, email us at help@ncgas.org.  
