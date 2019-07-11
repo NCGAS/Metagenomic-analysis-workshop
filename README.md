@@ -39,8 +39,8 @@ Introduction to NCGAS staff \
 Introduction to clusters and usage \
 Optimizing job submission \
 Data center tour \
-Data management and movement \ 
-Overview of metagenomics data collection \
+Data management and movement\ 
+Overview of metagenomics data collection 
 
 ## Day 2: 
 *9:00 AM to 5:00 PM* \
@@ -49,7 +49,7 @@ Introduction to metagenome assembly and assembly statistics \
 Installing programs locally \
 Assembling metagenome assembled genomes and quality assessment \ 
 Taxa and function identification \
-Downstream analysis \
+Downstream analysis 
 
 ## Day 3 
 *9:00 AM to 1:00 PM* \
