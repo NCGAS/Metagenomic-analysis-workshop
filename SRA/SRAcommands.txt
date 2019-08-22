@@ -1,0 +1,40 @@
+#Input file 
+cp /opt/crassphage.fasta /home/username/.
+Change sequence header to soemthing simple, no spaces. 
+
+#Copy the searchSRA results 
+cp /opt/results.zip /home/username/. 
+
+#Unzip the searchSRA results
+unzip results.zip
+
+#filtering the results 
+filtering.sh
+
+#collecting run information
+for f in `cat moreThan10Hits.txt`; do epost -db sra -format acc -id $f | efetch -format runinfo >>metadata; done
+
+sort metadata | uniq | sed '/^[[:space:]]*$/d' > metadata2 
+
+#Visulaization using Anvio 
+#Confirm header sequence in contigs.fa and bam files 
+Before starting the anvio visualization, make sure the sequence header in bam file is the same as the sequence header in contigs. /
+Anvi'o dosnt like spaces in the header, so remove all the words after the first space and make its the same as whats in bam files.  
+
+#Generate a contigs database 
+anvi-gen-contigs-database -f contigs.fa -o contigs.db
+
+#Profiling bam files 
+for dir in *-format.bam ; do anvi-init-bam $dir -o $dir.anvio.bam; done
+
+#Creating a bam files database 
+for f in *anvio.bam ; do  anvi-profile -i $f -c ../contigs.db ; done
+
+#Merge all the profiles to one database 
+anvi-merge */PROFILE.db -o SAMPLES-MERGED -c ../contigs.db
+
+#Visualize the data 
+anvi-interactive -p SAMPLES-MERGED/PROFILE.db -c ../contigs.db
+
+#Running focus for taxa analysis 
+focus.py -q fasta/
