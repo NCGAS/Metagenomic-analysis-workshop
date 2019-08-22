@@ -1,1 +1,1 @@
-# Mining SRA to identift similar datasets # 
+# Mining SRA to identify similar datasets # 
