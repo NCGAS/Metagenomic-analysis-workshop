@@ -13,6 +13,9 @@ Participation in this workshop is by invitation—you must register to be consid
 
 # Prerequisites
 This workshop is geared for beginners, but basic Unix commands will not be covered. As such, participants must have basic Linux functionality (sign in, moving around file system, etc.), but expertise is not required. It would be helpful if participants had some exposure to using a cluster for compute jobs and an idea of the end goals for their data.
+
+If you are working on a Windows machine, make sure to have Putty (https://www.putty.org/), or have Bash Desktop app. 
+
 Beginner tutorials in Linux (bash) can be found here: \
 Getting Started on Unix Walkthrough (pdf) (http://pages.iu.edu/~ss93/tutorials/GettingStartedonUnixWalkthrough.pdf)\
 Code Academy (https://www.codecademy.com/catalog/subject/all) 
@@ -30,29 +33,48 @@ Participants should leave with the following knowledge:
 
 Participant data will not be analyzed during the workshop (that takes more time than we have!), but the entire pipeline will be used by participants with smaller scale demo data. We can also schedule online meetings after the workshop to discuss your data. 
 
-# Agenda
-## Day 1: 
-*8:00 AM to 5:00 PM* \
-Introduction to NCGAS staff \
-Introduction to clusters and usage \
-Optimizing job submission \
-Data center tour \
-Data management and movement\
-Overview of metagenomics data collection 
-
-## Day 2: 
-*9:00 AM to 5:00 PM* \
-Quality control and pre-assessment of the data \
-Introduction to metagenome assembly and assembly statistics \
-Installing programs locally \
-Assembling metagenome assembled genomes and quality assessment\
-Taxa and function identification \
-Downstream analysis 
-
-## Day 3 
-*9:00 AM to 1:00 PM* \
-Adding more datasets from SRA \
-Visualization using R 
- 
+# Schedule
+|**Day 1**			 |**Activity**							                                |**Lead**|
+|---------------|:----------------------------------------------------------|-----:|
+|8:30am 		    |Registration							                                  |All   |
+|9:00am		      |Introduction to NCGAS and staff			                      |Tom   | 
+|9:30am		      |Introduction to Clusters and Other Resources		            |Sheri |
+|11:00am		    |BREAK                                                      |      |
+|11:15am		    |Job submission						                                |Carrie|
+|12:15pm		    |Data Center Tour/Lunch                                     |      |
+|2:00pm		      |Data Management and Movement				                        |Sheri|
+|3:30pm		      |BREAK                                                      |      |
+|3:45pm		      |Overview of metagenomics data		                |Tom |
+|4:30pm        |National Computing resources and support                 | Phil     |
+|5:30pm        | BREAK                                                  |       |
+|5:45pm		      |Publicly Available Resources					                      |All   |
+|6:30pm         |We will have reservations at a local tavern, Nick's.  We will be joining you to chat/relax, but you will be responsible for paying for your meal and drinks.                                        |      |
+|               |                                                           |      |
+|**Day 2**		  |**Activity**		                                            |**Lead**|
+|               |                                                           |      |
+|9:00am         |Quality control and pre-assessment of data                 |Bhavya   |
+|10:45am         |BREAK                                                      |      |
+|11:00am		    |Hands on -Metagenome assembly							                         |Bhavya|
+|12:30am		    |Lunch	                  			                            |      |
+|1:30pm		    |Software installation                                      |Carrie|
+|2:30pm		    |BREAK                                                      |      |
+|2:45pm		    |Hands on- Metagenome assembled genomes		                   |Bhavya|
+|4:00pm		    |BREAK                                                      |      |
+|4:15pm		    |Downstream analysis Discussion	                            |Bhavya|
+|6:00pm         |We will meet at a favorite local bar, the Upstairs.  They do not serve food, but there is plenty of food nearby that you can bring with you!  Again, we will be joining you to chat/relax, but you will be responsible for paying for your meal and drinks.                                                                               |      |
+|               |                                                           |      |
+|**Day 3**		  |**Activity**		                                            |**Lead**|
+|               |                                                           |      |
+|9:00am         |Mining SRA pipeline                                   |Bhavya|
+|10:30am        |BREAK                                                 |      |
+|10:45am        |Ordination plots in R                                     |Sheri |
+|12:30pm        |BREAK                                                   |       |
+|12:45pm        |Final Remarks                                              |Tom   |
+|1:00pm        |Lunch: On your own, there are a couple restaurants nearby you can check out. A few of them are listed in the Welcome document given during registration                                          |      |
+|               |                                                           |      |
 # Contact us 
-If you have any questions, email us at help@ncgas.org.  
+If you have any questions, email us at help@ncgas.org.  \
+Website https://ncgas.org/
+\
+Twitter - @ncgas \
+Facebook - @ncgasiu
