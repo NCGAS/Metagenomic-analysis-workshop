@@ -54,11 +54,11 @@ Participant data will not be analyzed during the workshop (that takes more time 
 |               |                                                           |      |
 |9:00am         |Quality control and pre-assessment of data                 |Bhavya   |
 |10:45am         |BREAK                                                      |      |
-|11:00am		    |Hands on -Metagenome assembly							                         |Bhavya|
+|11:00am		    |Hands on -Metagenome assembly and assembly stats                 |Bhavya|
 |12:30am		    |Lunch	                  			                            |      |
 |1:30pm		    |Software installation                                      |Carrie|
 |2:30pm		    |BREAK                                                      |      |
-|2:45pm		    |Hands on- Metagenome assembled genomes		                   |Bhavya|
+|2:45pm		    |Hands on- Metagenome assembled genomes	and quality assessment |Bhavya|
 |4:00pm		    |BREAK                                                      |      |
 |4:15pm		    |Downstream analysis Discussion	                            |Bhavya|
 |6:00pm         |We will meet at a favorite local bar, the Upstairs.  They do not serve food, but there is plenty of food nearby that you can bring with you!  Again, we will be joining you to chat/relax, but you will be responsible for paying for your meal and drinks.                                                                               |      |
