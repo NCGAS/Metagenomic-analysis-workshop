@@ -29,6 +29,7 @@ questions.
 **LETS START WITH THE READS**
 
 2. Add you reads as files to the reads directory.
+
 In the reads directory, run the command
 
         cat *1.fastq >left.fq
@@ -37,6 +38,7 @@ In the reads directory, run the command
 This command joins all the left reads(ending with 1.fastq) toegther to left.fq and all the right reads (ending with 2.fastq).
 
 3. Before we start with the analysis, lets first see who is there in the data.
+
 Before you start, take a look at the job script and make sure the email and path is set correctly before you submit the job. To take a look at the jobs script you can use the command
         
         less kraken.sh
@@ -50,6 +52,7 @@ OUTPUT - Files ending with the "kraken_readname.out" and "kraken_readname.report
 **ASSEMBLY AND ASSEMBLY REPORTS**
 
 4. Go to to assembly directory to start assembling the reads
+
 Before you start, take a look at the job script and make sure the email and path is set correctly before you submit the job. To take a look at the jobs script you can use the command
 
         less spades.sh
@@ -76,15 +79,16 @@ In the presentations for now
 
 **BINNING AND BIN QUALITY REPORTS**
 
-7. Lets start grouping similar sequences together now,
-The script binning.sh runs metabat on both the spades and megahit assembly, check to see the script looks right before you
-submit the job
+7. Lets start grouping similar sequences together now.  
+
+The script binning.sh runs metabat on both the spades and megahit assembly, check to see the script looks right before you submit the job
         
         qsub binning.sh
 
 OUTPUT - spades_metabat and megahit_metabat directories that have grouped bins in them
 
 8. Check bin quality of the bins
+
 Next once the bins are generated, run the next script to calculate the completeness/taxa for each bins. Run the script spades_bin_quality.sh
         
         qsub spades_bin_quality.sh
@@ -99,8 +103,7 @@ If you are interested in running the scripts for metabat as well, here are the s
         
         sed -i 's/spades/megahit/g' megahit_bin_quality.sh
 
-WARNING:The sed command only works if your files have the same convention as spades bin directory. For example, in this case, the bins from spades
-assembly is saved to spades_metabat, and bins from megahit is saved to megahit_metabat.
+WARNING:The sed command only works if your files have the same convention as spades bin directory. For example, in this case, the bins from spades assembly is saved to spades_metabat, and bins from megahit is saved to megahit_metabat.
 
 ## Contact 
 Email bhnala@iu.edu or help@ncgas.org 
