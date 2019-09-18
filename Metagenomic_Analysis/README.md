@@ -7,7 +7,7 @@ The scripts available here follow along the following steps,
 - Binning similar contigs toegther to reconstruct genomes, 1) MetaBat
 - Bin qulaity statistics using 1) CheckM, Kraken, Centrifuge, BUSCO
 - Taxa annotation after each steps using 1)Kraken, 2)Centrifuge, 3)FOCUS
-- Functional annotation for the bins using 1) SUPEFOCUS
+- Functional annotation for the bins using 1)SUPEFOCUS
 
 These scripts will help you get started with the basic steps employed in metagenomic analysis, starting with taxa/functional annotation
 of the intial reads and assembled contigs. If you are insterested in further reconstructing the genomes from the metagenomes, you can
@@ -27,6 +27,7 @@ questions.
         for f in */*.sh; do p=`pwd`; sed -i "s|PWDHERE|$p|g" $f ; done
 
 **LETS START WITH THE READS**
+
 2. Add you reads as files to the reads directory.
 In the reads directory, run the command
 
@@ -47,7 +48,8 @@ To run the job, run the command
 OUTPUT - Files ending with the "kraken_readname.out" and "kraken_readname.report"
 
 **ASSEMBLY AND ASSEMBLY REPORTS**
-4. Goto to assembly directory to start assembling the reads
+
+4. Go to to assembly directory to start assembling the reads
 Before you start, take a look at the job script and make sure the email and path is set correctly before you submit the job. To take a look at the jobs script you can use the command
 
         less spades.sh
@@ -72,6 +74,7 @@ Here you have an option, you can pick the best assembler for this dataset or if 
 In the presentations for now
 
 **BINNING AND BIN QUALITY REPORTS**
+
 7. Lets start grouping similar sequences together now,
 The script binning.sh runs metabat on both the spades and megahit assembly, check to see the script looks right before you
 submit the job
