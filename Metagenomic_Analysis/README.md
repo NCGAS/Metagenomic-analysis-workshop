@@ -67,6 +67,7 @@ Wait for these jobs to complete. Take a look at the job logs before you continue
 OUTPUT - spades_output and megahit_output directories
 
 5. Once the assembly jobs are completed, then run the next script
+
         
         qsub assembly_report.sh
 
