@@ -71,6 +71,7 @@ OUTPUT - This complete your assemblers and the assembly stats report that will b
 Here you have an option, you can pick the best assembler for this dataset or if you cant decide run both assemblies through the next step.The latter is what I did for the next set of scripts.
 
 6. Contigs taxa identification and diversity estimation
+
 In the presentations for now
 
 **BINNING AND BIN QUALITY REPORTS**
