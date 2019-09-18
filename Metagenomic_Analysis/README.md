@@ -21,6 +21,7 @@ questions.
 **SETTING UP SCRIPTS FIRST**
 1. Run the following commands, that will find the job scripts saved with an extension .sh and replaces the emailaddress and adds the path
 
+
         make sure to CHNAGE MY EMAIL ADDRESS TO YOURS HERE,
         for f in */*.sh; do sed -i 's/YOUREMAILHERE/email@iu.edu/g' $f; done
 
