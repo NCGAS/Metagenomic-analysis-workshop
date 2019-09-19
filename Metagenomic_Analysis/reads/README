@@ -1,0 +1,15 @@
+This directory is to save all of your paired end reads in fastq format.
+
+IMPORTANT NOTES: 
+If you generate duplicates or any add any other additional samples to this directory, 
+the binning.sh script in the later step will BE confused. Make sure to save only the file
+used in the analysis here. 
+
+Add the reamining as another directory under reads if you like, similar to what I did with 
+fasta directory. 
+
+First, for coassembly lets concatenate left and right reads
+	cat *_1.fastq > left.fq
+	cat *_2.fastq >right.fq
+
+

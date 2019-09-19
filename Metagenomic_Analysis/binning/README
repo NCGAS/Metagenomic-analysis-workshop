@@ -1,0 +1,20 @@
+For the bin_quality.sh scripts, in this folder I added only scripts to calculate quality stats for spades_metabat bins. 
+If you are interested in running the scripts for metabat as well, here are the steps 
+
+1)Copy the job script file with a new name
+	cp spades_bin_quality.sh metabat_bin_quality.sh
+
+2) In the script, you will want to replace the directory names from spades_* to megahit_*. You can do this manually, or run the following commands
+	sed -i 's/spades/megahit/g' megahit_bin_quality.sh
+
+WARNING:The sed command only works if your files have the same convention as spades bin directory. For example, in this case, the bins from spades
+assembly is saved to spades_metabat, and bins from megahit is saved to megahit_metabat. 
+
+3) If you have a lot of bins, reading the "bins_quality_report" generated from the bin_quality.sh can be difficult to read, since this file concatenates
+results from all the different tools to one file. 
+
+Alternate options is really to take a look each programs results, and generate your own table manually or using more bash/python magic. 
+Furure directions:I am working on updating this report, so next chance I get I will fix this problem!
+
+4) The script fastANI - This is to calulate average nucleotide frequency (ANI), for each bin with the identified taxa. 
+Script taken from https://github.com/ParBLiSS/FastANI
