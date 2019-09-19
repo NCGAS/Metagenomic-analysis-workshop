@@ -7,8 +7,8 @@
 
 cd PWDHERE
 
-module load quast/5.0.0
-module load bowtie2/2.3.2
+module load quast/4.6.3
+module load bowtie2
 
 quast.py assembly/megahit_output/final.contigs.fa  -o assembly/megahit_quast
 quast.py assembly/spades_output/contigs.fasta  -o assembly/spades_quast
