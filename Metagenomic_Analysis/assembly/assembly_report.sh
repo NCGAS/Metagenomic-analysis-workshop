@@ -7,7 +7,7 @@
 
 cd PWDHERE
 
-module load quast/4.6.3
+module load quast
 module load bowtie2
 
 quast.py assembly/megahit_output/final.contigs.fa  -o assembly/megahit_quast

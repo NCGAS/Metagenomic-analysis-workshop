@@ -7,13 +7,12 @@
 
 cd PWDHERE
 
-module load checkm
-module load hmmer
-module load kraken
+module load checkm/1.0.18
+module load hmmer/3.1
+module load kraken/1.1.1
 export KRAKEN_DB1=/N/dc2/projects/ncgas/genomes/kraken/minikraken_20171019_8GB
-module load kraken
-module load centrifuge 
-module load busco 
+module load centrifuge/1.0.3
+module load busco/3.0.2
 
 mkdir binning/bin_quality
 

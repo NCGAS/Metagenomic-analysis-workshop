@@ -7,7 +7,7 @@
 
 cd PWDHERE
 
-module load bowtie2/2.3.2
+module load bowtie2/intel/2.3.2
 module load samtools/1.9
 module load metabat/2.11.3
 

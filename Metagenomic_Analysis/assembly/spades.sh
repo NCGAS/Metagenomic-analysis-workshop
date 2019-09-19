@@ -7,7 +7,7 @@
 
 cd PWDHERE
 
-module load spades/intel/3.10.1
+module load spades/intel/3.11.1
 
 left=reads/left.fq
 right=reads/right.fq
