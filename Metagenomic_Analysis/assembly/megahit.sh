@@ -11,6 +11,6 @@ module load megahit/1.1.2
 left=reads/left.fq
 right=reads/right.fq
 
-megahit -1 $left -2 $right --tmp-dir PWD -o assembly/megahit_output
+megahit -1 $left -2 $right --tmp-dir PWDHERE -o assembly/megahit_output
 
 
