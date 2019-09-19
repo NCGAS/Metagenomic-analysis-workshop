@@ -1,7 +1,7 @@
 #!/bin/bash
 #PBS -k oe
 #PBS -l nodes=1:ppn=10,vmem=100gb,walltime=1:00:00
-#PBS -M YOUREAMILHERE
+#PBS -M YOUREMAILHERE
 #PBS -m abe
 #PBS -N spades
 
