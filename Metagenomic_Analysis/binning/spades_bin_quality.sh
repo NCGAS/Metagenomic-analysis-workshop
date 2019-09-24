@@ -9,8 +9,7 @@ cd PWDHERE
 
 module load checkm/1.0.18
 module load hmmer/3.1
-module load kraken/1.1.1
-export KRAKEN_DB1=/N/dc2/projects/ncgas/genomes/kraken/minikraken_20171019_8GB
+module load kraken/2.0.8
 module load centrifuge/1.0.3
 module load busco/3.0.2
 
@@ -30,8 +29,7 @@ echo "CheckM done"
 #kraken_taxa
 for f in $spades_bins
 do 
-	kraken --preload --db $KRAKEN_DB1 binning/spades_metabat/"$f" > binning/bin_quality/"$f".kraken.out
-	kraken-report --db $KRAKEN_DB1 binning/bin_quality/"$f".kraken.out > binning/bin_quality/"$f".kraken.report
+	kraken2 --db $KRAKEN_DB binning/spades_metabat/"$f" --threads 1 --use-names --report binning/bin_quality/"$f"_kraken_report --output binning/bin_quality/"$f"_kraken.out
 done 
 echo "Kraken done" 
 
@@ -58,7 +56,7 @@ echo "Kraken_output  %reads  num_of_reads_per_clade  number_of_reads_in_taxa  ra
 
 for f in $spades_bins
 do 
-	kraken_line=`head -n 10  binning/bin_quality/"$f".kraken.report`
+	kraken_line=`head -n 10 binning/bin_quality/"$f"_kraken_report`
 	echo "kraken_output $kraken_line" >> binning/bin_quality/bins_quality_report
 done 
 
