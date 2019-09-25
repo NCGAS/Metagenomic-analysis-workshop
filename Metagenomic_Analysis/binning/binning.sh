@@ -28,7 +28,7 @@ metabat2 -i assembly/spades_output/contigs.fasta -a binning/spades_metabat_depth
 
 echo "Metabat binning for SPAdes done"
 
-MegaHit binning
+#MegaHit binning
 bowtie2-build assembly/megahit_output/final.contigs.fa  binning/megahit_index
 for f in $reads
 do
