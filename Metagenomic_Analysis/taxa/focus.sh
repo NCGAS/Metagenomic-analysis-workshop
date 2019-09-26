@@ -3,7 +3,7 @@
 #PBS -l nodes=1:ppn=1,vmem=50gb,walltime=2:00:00
 #PBS -M YOUREMAILHERE
 #PBS -m abe
-#PBS -N kraken
+#PBS -N focus
 
 cd PWDHERE
 
