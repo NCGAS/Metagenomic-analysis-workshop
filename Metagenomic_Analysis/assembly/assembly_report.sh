@@ -10,16 +10,19 @@ cd PWDHERE
 module load quast
 module load bowtie2
 
+left=reads/left.fq
+right=reads/right.fq
+
 quast.py assembly/megahit_output/final.contigs.fa  -o assembly/megahit_quast
 quast.py assembly/spades_output/contigs.fasta  -o assembly/spades_quast
 
 echo "SPAdes"
 bowtie2-build assembly/spades_output/contigs.fasta assembly/spades_quast/index
-bowtie2 -x assembly/spades_quast/index -U reads/left.fq,reads/right.fq -S assembly/spades_quast/spades.sam > assembly/spades_bowtie2.log 2>&1 
+bowtie2 -x assembly/spades_quast/index -U $left,$rig -S assembly/spades_quast/spades.sam > assembly/spades_bowtie2.log 2>&1 
 
 echo "Megahit"
 bowtie2-build assembly/megahit_output/final.contigs.fa assembly/megahit_quast/index
-bowtie2 -x assembly/megahit_quast/index -U reads/left.fq,reads/right.fq -S assembly/megahit_quast/megahit.sam >assembly/megahit_bowtie2.log  2>&1
+bowtie2 -x assembly/megahit_quast/index -U $left,$right -S assembly/megahit_quast/megahit.sam >assembly/megahit_bowtie2.log  2>&1
 
 #If there was already a assembly_report.txt generated that will be deleted
 rm -r assembly/assembly_report.txt 

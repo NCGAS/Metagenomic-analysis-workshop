@@ -12,6 +12,6 @@ module load spades/intel/3.11.1
 left=reads/left.fq
 right=reads/right.fq
 
-spades.py -1 $left  -2 $right --meta -t 8 -o assembly/spades_output
+spades.py -1 $left -2 $right --meta -t 8 -o assembly/spades_output
 
 
