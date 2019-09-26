@@ -1,0 +1,9 @@
+This directory contains scripts to calculate the taxa analysis for all the input reads using 
+- Centrifuge 
+- Kraken 
+- FOCUS 
+
+These scripts can also be altered as necessary for taxa analysis of other outputs in this analysis
+
+More information on these three tools is available here 
+https://ncgas.org/Blog_Posts/Metagenomic%20taxa%20analysis.php
