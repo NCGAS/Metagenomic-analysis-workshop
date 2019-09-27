@@ -12,13 +12,14 @@ Available on the VM in path /opt, to copy the file from there to you user space,
 This part of the analysis is already done and is available on the virtual machine. The steps to do this part of the analysis is described below. 
 
 To search SRA, we used the gateway [SearchSRA gateway](https://www.searchsra.org/)
-    - First register for an account, if you dont have an account already
-    - Create a project - enter project name, project description. 
-    - Create an experiment - experiment name description, project the experiment should belong to, application-"Search-SRA". Then click "Continue" 
-    - Choose reference file- Import the input sequence 
-    - For the option "Select existing Search IDs File OR Upload your own below" - you can select to serahc against only "[Human Microbiome Project](https://www.hmpdacc.org/ihmp/) datasets in SRA", "[TARA ocean project datasets](https://oceans.taraexpeditions.org/en/m/about-tara/les-expeditions/tara-oceans/), or "All-SRA-metagenomes"
-    - Click "Save and Launch" to start the job
-  Documentation on how to use the gateway is also available [here](https://www.searchsra.org/pages/documentation).
+- First register for an account, if you dont have an account already
+- Create a project - enter project name, project description. 
+- Create an experiment - experiment name description, project the experiment should belong to, application-"Search-SRA". Then click "Continue" 
+- Choose reference file- Import the input sequence 
+- For the option "Select existing Search IDs File OR Upload your own below" - you can select to serahc against only "[Human Microbiome Project](https://www.hmpdacc.org/ihmp/) datasets in SRA", "[TARA ocean project datasets](https://oceans.taraexpeditions.org/en/m/about-tara/les-expeditions/tara-oceans/), or "All-SRA-metagenomes"
+- Click "Save and Launch" to start the job
+
+Documentation on how to use the gateway is also available [here](https://www.searchsra.org/pages/documentation).
 
 Once the searchSRA job is completed, download the output "results.txt". This file contains a link where the results are stored, and other information.     
 
