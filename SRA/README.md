@@ -37,10 +37,9 @@ The result is a subset directory with only the bam files that passed these filte
 
 #### Getting metadata or run information for the filtered subset
 To do this step we will be using E-utilities – to lookup the metadata information of the subset datasets using SRA ID.
-**generating metadata** \
+- generating metadata \
 `for f in 'cat moreThan10Hits.txt'; do epost -db sra -format acc -id $f | efetch -format runinfo>>metadata; done`
-
-**formatting the metadata** \
+- formatting the metadata
 `sort metadata | uniq| sed '/^[[:space:]]*$/d' >metadata2`
 
 #### Visualization 
