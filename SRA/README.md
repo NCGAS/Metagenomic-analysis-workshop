@@ -5,7 +5,7 @@
 This is the sequence of interest or a genome that you are interested in idenitfying other datasets in SRA that may have this genome.
 For the workshop our input is crAssphage genome, NC_024711.1 Uncultured crAssphage, complete genome from NCBI 
 
-Available on the VM in path /opt, to copy the file from there to you user space, run the command.
+Available on the VM in path /opt, to copy the file from there to you user space, run the command. \
 `cp /opt/crassphage.fasta /home/username`
 
 #### Search SRA 
@@ -27,7 +27,7 @@ Filter the bam files to include only those that,
 1. have a alignment length of more than 100bp 
     - This was done using the code available in another git repository https://github.com/linsalrob/sam.
 2. have more than 10 hits at least \
-Run the command, to run the above steps
+Run the command, to run the above steps \
 `./filtering.sh` 
 
 The result is a subset directory with only the bam files that passed these filtering paramters. Additonaly there are two other files generated that has some really useful information as well 
@@ -36,10 +36,10 @@ The result is a subset directory with only the bam files that passed these filte
 
 #### Getting metadata or run information for the filtered subset
 To do this step we will be using E-utilities – to lookup the metadata information of the subset datasets using SRA ID.
-**generating metadata**
-`for f in `cat moreThan10Hits.txt`; do epost -db sra -format acc -id $f | efetch -format runinfo>>metadata; done`
+**generating metadata** \
+`for f in 'cat moreThan10Hits.txt'; do epost -db sra -format acc -id $f | efetch -format runinfo>>metadata; done`
 
-**formatting the metadata**
+**formatting the metadata** \
 `sort metadata | uniq| sed '/^[[:space:]]*$/d' >metadata2`
 
 #### Visualization 
@@ -49,10 +49,10 @@ For this step we picked [Anvi'o](http://merenlab.org/software/anvio/), an analys
 
 The commands used to quickly visualize the data in anvio, 
 1. Start with formatting the input file (sequence entered into SearchSRA as input) header line. This line has to be the same as header line in bam files as well. 
-	-  Anvi’o doesn’t like spaces, and the input.fa file header has to be the same in 	the bam files
-	-  use samtools to see what the header line is in the bam files in subset 
-		`samtools view -h -o out.sam DRR002659.bam`
-		        @SQ     SN:NC_024711.1  LN:97065
+	-  Anvi’o doesn’t like spaces, and the input.fa file header has to be the same in the bam files
+	-  use samtools to see what the header line is in the bam files in subset \
+		`samtools view -h -o out.sam DRR002659.bam` \
+		        @SQ     SN:NC_024711.1  LN:97065 
 	- remove everything else in the crassphage.fa header line 
 2. Input files for Anvio
     - Reformatted input sequence from Step 1 
