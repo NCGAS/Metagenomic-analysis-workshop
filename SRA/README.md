@@ -30,6 +30,48 @@ Filter the bam files to include only those that,
 Run the command, to run the above steps
 `./filtering.sh` 
 
-The result is a subset directory with only the bam files that passed these filtering paramters
+The result is a subset directory with only the bam files that passed these filtering paramters. Additonaly there are two other files generated that has some really useful information as well 
+**samtools-count** — list the number of reads that aligned against the reference genome from *.filtered.bam files (output from sam_len) 
+**morethan10Hits.txt** – filters the samtools_count list to separate out only those datasets that have a value more then 50.  
 
-Great! Now we have the filered bam files that potentially have the input sequence 
+#### Getting metadata or run information for the filtered subset
+To do this step we will be using E-utilities – to lookup the metadata information of the subset datasets using SRA ID.
+**generating metadata**
+`for f in `cat moreThan10Hits.txt`; do epost -db sra -format acc -id $f | efetch -format runinfo>>metadata; done`
+
+**formatting the metadata**
+`sort metadata | uniq| sed '/^[[:space:]]*$/d' >metadata2`
+
+#### Visualization 
+This final step is to quickly visualize the filtered bam files against the input sequence to assess the coverage, regions of the input sequence.
+
+For this step we picked [Anvi'o](http://merenlab.org/software/anvio/), an analysis and visualization platform for omics data. This platform will extend the data to not just confirming datasets do contain the genome, but also explore the results further. 
+
+The commands used to quickly visualize the data in anvio, 
+1. Start with formatting the input file (sequence entered into SearchSRA as input) header line. This line has to be the same as header line in bam files as well. 
+	-  Anvi’o doesn’t like spaces, and the input.fa file header has to be the same in 	the bam files
+	-  use samtools to see what the header line is in the bam files in subset 
+		`samtools view -h -o out.sam DRR002659.bam`
+		        @SQ     SN:NC_024711.1  LN:97065
+	- remove everything else in the crassphage.fa header line 
+2. Input files for Anvio
+    - Reformatted input sequence from Step 1 
+    - Bam files- *bam files in subset directory 
+    
+3. Generate a contigs database 
+	`anvi-gen-contigs-database -f crassphage.fasta -o contigs.db`
+    
+4. Profiling bam files – in subset directory run the below commands.
+    Sorting and indexing all the bam files using samtools to do this step  
+    `for f in *.bam ; do anvi-init-bam $f -o $f.anvio.bam; done`
+
+5. Adding the bam file information to the contigs database to add sample specific information
+	`for f in *anvio.bam ; do  anvi-profile -i $f -c ../contigs.db ; done`
+
+6. Merge all the profiles to one database 
+    `anvi-merge */PROFILE.db -o SAMPLES-MERGED -c ../contigs.db`
+
+7. Visualize the data 
+    `anvi-interactive -p SAMPLES-MERGED/PROFILE.db -c ../contigs.db`
+
+Visualize the Anvi'o figure in the path http://IPADRRESS/app/index.html
