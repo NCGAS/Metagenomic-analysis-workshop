@@ -25,9 +25,9 @@ Once the searchSRA job is completed, download the output "results.txt". This fil
 
 #### Filtering the SearchSRA results 
 Filter the bam files to include only those that, 
-1. have a alignment length of more than 100bp 
+- have a alignment length of more than 100bp 
     - This was done using the code available in another git repository https://github.com/linsalrob/sam.
-2. have more than 10 hits at least \
+- have more than 10 hits at least \
 Run the command, to run the above steps \
 `./filtering.sh` 
 
@@ -49,30 +49,30 @@ This final step is to quickly visualize the filtered bam files against the input
 For this step we picked [Anvi'o](http://merenlab.org/software/anvio/), an analysis and visualization platform for omics data. This platform will extend the data to not just confirming datasets do contain the genome, but also explore the results further. 
 
 The commands used to quickly visualize the data in anvio, 
-1. Start with formatting the input file (sequence entered into SearchSRA as input) header line. This line has to be the same as header line in bam files as well. 
+- Start with formatting the input file (sequence entered into SearchSRA as input) header line. This line has to be the same as header line in bam files as well. 
 	-  Anvi’o doesn’t like spaces, and the input.fa file header has to be the same in the bam files
 	-  use samtools to see what the header line is in the bam files in subset \
 		`samtools view -h -o out.sam DRR002659.bam` \
 		        @SQ     SN:NC_024711.1  LN:97065 
 	- remove everything else in the crassphage.fa header line 
-2. Input files for Anvio
+- Input files for Anvio
     - Reformatted input sequence from Step 1 
     - Bam files- *bam files in subset directory 
     
-3. Generate a contigs database 
+- Generate a contigs database 
 	`anvi-gen-contigs-database -f crassphage.fasta -o contigs.db`
     
-4. Profiling bam files – in subset directory run the below commands.
+- Profiling bam files – in subset directory run the below commands.
     Sorting and indexing all the bam files using samtools to do this step  
     `for f in *.bam ; do anvi-init-bam $f -o $f.anvio.bam; done`
 
-5. Adding the bam file information to the contigs database to add sample specific information
+- Adding the bam file information to the contigs database to add sample specific information
 	`for f in *anvio.bam ; do  anvi-profile -i $f -c ../contigs.db ; done`
 
-6. Merge all the profiles to one database 
+- Merge all the profiles to one database 
     `anvi-merge */PROFILE.db -o SAMPLES-MERGED -c ../contigs.db`
 
-7. Visualize the data 
+- Visualize the data 
     `anvi-interactive -p SAMPLES-MERGED/PROFILE.db -c ../contigs.db`
 
 Visualize the Anvi'o figure in the path http://IPADRRESS/app/index.html
