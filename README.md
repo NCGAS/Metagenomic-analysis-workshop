@@ -72,6 +72,10 @@ Participant data will not be analyzed during the workshop (that takes more time 
 |12:45pm        |Final Remarks                                              |Tom   |
 |1:00pm        |Lunch: On your own, there are a couple restaurants nearby you can check out. A few of them are listed in the Welcome document given during registration                                          |      |
 |               |                                                           |      |
+
+# Presentations 
+Work in progress, a link will be up soon! 
+
 # Contact us 
 If you have any questions, email us at help@ncgas.org.  \
 Website https://ncgas.org/
