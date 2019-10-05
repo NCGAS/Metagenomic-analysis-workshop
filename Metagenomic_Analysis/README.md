@@ -13,24 +13,25 @@ vary base don your research questions.
         make sure to CHNAGE MY EMAIL ADDRESS TO YOURS HERE,\
         `for f in */*.sh; do sed -i 's/YOUREMAILHERE/email@iu.edu/g' $f; done`\
         `for f in */*.sh; do p=``pwd``; sed -i "s|PWDHERE|$p|g" $f ; done `
-
-**LETS START WITH THE READS** \
-2. Add you reads as files to the reads directory. In the reads directory, run the command \
-        `cat *1.fastq >left.fq`\
-        `cat *2.fastq >right.fq`\
-This command joins all the left reads(ending with 1.fastq) toegther to left.fq and all the right reads (ending with 2.fastq). 
-
-3. Before we start with the analysis, lets first see who is there in the 
-data. Before you start, take a look at the job script and make sure the email and path is set correctly before you submit the job. To take a look at the jobs script you can use the command
-
-In the directory taxa/
-
-        less kraken.sh To run the job, run the command
         
+**TAXA ASSIGNMENT OF THE READS**
+2. Once the scripts are setup, in the taxa directory there are three scripts that run three different taxa tools on the raw reads. Run the three tools to generate the taxa profiles. 
+        `cd taxa/` \
+
+For example, before running each of the scripts, first take a look at the script to make sure the email and filepaths are set correctly. 
+        
+        less kraken.sh
         qsub kraken.sh 
 
 OUTPUT - Files ending with the "kraken_readname.out" and "kraken_readname.report" 
 Do the same for the other two taxa tools in this directory. 
+
+
+**LETS START WITH THE READS** \
+3. Add you reads as files to the reads directory. In the reads directory, run the command \
+        `cat *1.fastq >left.fq`\
+        `cat *2.fastq >right.fq`\
+This command joins all the left reads(ending with 1.fastq) toegther to left.fq and all the right reads (ending with 2.fastq). 
 
 **ASSEMBLY AND ASSEMBLY REPORTS** 
 4. Go to to assembly directory to start assembling the reads Before you start, take a look 
