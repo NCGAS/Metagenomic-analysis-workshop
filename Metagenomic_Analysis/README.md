@@ -30,9 +30,11 @@ Do the same for the other two taxa tools in this directory.
 
 
 **LETS START WITH THE READS** \
-3. Add you reads as files to the reads directory. In the reads directory, run the command \
-        `cat *1.fastq >left.fq`\
-        `cat *2.fastq >right.fq`\
+3. Add you reads as files to the reads directory. In the reads directory, run the command 
+
+         cat *1.fastq >left.fq
+         cat *2.fastq >right.fq
+         
 This command joins all the left reads(ending with 1.fastq) toegther to left.fq and all the right reads (ending with 2.fastq). 
 
 **ASSEMBLY AND ASSEMBLY REPORTS** \
