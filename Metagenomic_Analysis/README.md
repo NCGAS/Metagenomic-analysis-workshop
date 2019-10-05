@@ -12,7 +12,7 @@ vary base don your research questions.
 1. Run the following commands, that will find the job scripts saved with an extension .sh and replaces the emailaddress and adds the path\
         make sure to CHNAGE MY EMAIL ADDRESS TO YOURS HERE,\
         `for f in */*.sh; do sed -i 's/YOUREMAILHERE/email@iu.edu/g' $f; done`\
-        `for f in */*.sh; do p=``pwd``; sed -i "s|PWDHERE|$p|g" $f ; done `\
+        `for f in */*.sh; do p=``pwd``; sed -i "s|PWDHERE|$p|g" $f ; done `
 
 **LETS START WITH THE READS** \
 2. Add you reads as files to the reads directory. In the reads directory, run the command \
