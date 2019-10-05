@@ -35,9 +35,10 @@ Do the same for the other two taxa tools in this directory.
         `cat *2.fastq >right.fq`\
 This command joins all the left reads(ending with 1.fastq) toegther to left.fq and all the right reads (ending with 2.fastq). 
 
-**ASSEMBLY AND ASSEMBLY REPORTS** 
+**ASSEMBLY AND ASSEMBLY REPORTS** \
 4. Go to to assembly directory to start assembling the reads Before you start, take a look 
 at the job script and make sure the email and path is set correctly before you submit the job. To take a look at the jobs script you can use the command
+
         less spades.sh
         less megahit.sh 
 
@@ -58,7 +59,7 @@ cant decide run both assemblies through the next step.The latter is what I did f
 
 6. Contigs taxa identification and diversity estimation In the presentations for now 
 
-**BINNING AND BIN QUALITY REPORTS** 
+**BINNING AND BIN QUALITY REPORTS** \
 7. Lets start grouping similar sequences together now. The script binning.sh runs metabat on both the spades and megahit assembly, check to see the script looks right before you submit the job
         
         qsub binning.sh 
