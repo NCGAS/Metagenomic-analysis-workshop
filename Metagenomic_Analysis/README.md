@@ -11,13 +11,13 @@ vary base don your research questions.
 **SETTING UP SCRIPTS FIRST** 
 1. Run the following commands, that will find the job scripts saved with an extension .sh and replaces the emailaddress and adds the path
         make sure to CHNAGE MY EMAIL ADDRESS TO YOURS HERE,
-        for f in */*.sh; do sed -i 's/YOUREMAILHERE/email@iu.edu/g' $f; done
-        for f in */*.sh; do p=`pwd`; sed -i "s|PWDHERE|$p|g" $f ; done 
+        `for f in */*.sh; do sed -i 's/YOUREMAILHERE/email@iu.edu/g' $f; done`
+        `for f in */*.sh; do p=``pwd``; sed -i "s|PWDHERE|$p|g" $f ; done `
 
 **LETS START WITH THE READS** \
 2. Add you reads as files to the reads directory. In the reads directory, run the command
-        cat *1.fastq >left.fq
-        cat *2.fastq >right.fq 
+        `cat *1.fastq >left.fq`
+        `cat *2.fastq >right.fq`
 This command joins all the left reads(ending with 1.fastq) toegther to left.fq and all the right reads (ending with 2.fastq). 
 
 3. Before we start with the analysis, lets first see who is there in the 
