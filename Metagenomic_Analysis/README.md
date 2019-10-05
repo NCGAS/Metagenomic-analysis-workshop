@@ -10,13 +10,15 @@ vary base don your research questions.
 
 **SETTING UP SCRIPTS FIRST** 
 1. Run the following commands, that will find the job scripts saved with an extension .sh and replaces the emailaddress and adds the path\
-        make sure to CHNAGE MY EMAIL ADDRESS TO YOURS HERE,\
-        `for f in */*.sh; do sed -i 's/YOUREMAILHERE/email@iu.edu/g' $f; done`\
-        `for f in */*.sh; do p=``pwd``; sed -i "s|PWDHERE|$p|g" $f ; done `
+        make sure to CHNAGE MY EMAIL ADDRESS TO YOURS HERE,
+        
+         for f in */*.sh; do sed -i 's/YOUREMAILHERE/email@iu.edu/g' $f; done
+         for f in */*.sh; do p=`pwd`; sed -i "s|PWDHERE|$p|g" $f ; done 
         
 **TAXA ASSIGNMENT OF THE READS** \
-2. Once the scripts are setup, in the taxa directory there are three scripts that run three different taxa tools on the raw reads. Run the three tools to generate the taxa profiles. \
-        `cd taxa/` 
+2. Once the scripts are setup, in the taxa directory there are three scripts that run three different taxa tools on the raw reads. Run the three tools to generate the taxa profiles.
+
+         cd taxa/ 
 
 For example, before running each of the scripts, first take a look at the script to make sure the email and filepaths are set correctly. 
         
