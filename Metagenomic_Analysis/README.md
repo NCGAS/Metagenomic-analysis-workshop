@@ -15,8 +15,8 @@ vary base don your research questions.
         `for f in */*.sh; do p=``pwd``; sed -i "s|PWDHERE|$p|g" $f ; done `
         
 **TAXA ASSIGNMENT OF THE READS** \
-2. Once the scripts are setup, in the taxa directory there are three scripts that run three different taxa tools on the raw reads. Run the three tools to generate the taxa profiles. 
-        `cd taxa/` \
+2. Once the scripts are setup, in the taxa directory there are three scripts that run three different taxa tools on the raw reads. Run the three tools to generate the taxa profiles. \
+        `cd taxa/` 
 
 For example, before running each of the scripts, first take a look at the script to make sure the email and filepaths are set correctly. 
         
