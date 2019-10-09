@@ -21,16 +21,16 @@ sort metadata | uniq | sed '/^[[:space:]]*$/d' > metadata2
 Before starting the anvio visualization, make sure the sequence header in bam file is the same as the sequence header in contigs. /
 Anvi'o dosnt like spaces in the header, so remove all the words after the first space and make its the same as whats in bam files.  
 
-#Generate a contigs database 
+#Generate a contigs database - run this command in home space or /home/username/
 anvi-gen-contigs-database -f crassphage.fa -o contigs.db
 
-#Profiling bam files- Run this commands in subset directory
+#Profiling bam files- Run this commands in subset directory or /home/username/subset
 for dir in *.bam ; do anvi-init-bam $dir -o $dir.anvio.bam; done
 
-#Creating a bam files database 
+#Creating a bam files database - Run this command in the subset directory or /home/username/subset
 for f in *anvio.bam ; do  anvi-profile -i $f -c ../contigs.db ; done
 
-#Merge all the profiles to one database 
+#Merge all the profiles to one database - Run this command in the subset directory or /home/username/subset
 anvi-merge */PROFILE.db -o SAMPLES-MERGED -c ../contigs.db
 
 #Visualize the data 
