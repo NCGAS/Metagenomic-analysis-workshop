@@ -22,10 +22,10 @@ Before starting the anvio visualization, make sure the sequence header in bam fi
 Anvi'o dosnt like spaces in the header, so remove all the words after the first space and make its the same as whats in bam files.  
 
 #Generate a contigs database 
-anvi-gen-contigs-database -f contigs.fa -o contigs.db
+anvi-gen-contigs-database -f crassphage.fa -o contigs.db
 
-#Profiling bam files 
-for dir in *-format.bam ; do anvi-init-bam $dir -o $dir.anvio.bam; done
+#Profiling bam files- Run this commands in subset directory
+for dir in *.bam ; do anvi-init-bam $dir -o $dir.anvio.bam; done
 
 #Creating a bam files database 
 for f in *anvio.bam ; do  anvi-profile -i $f -c ../contigs.db ; done
