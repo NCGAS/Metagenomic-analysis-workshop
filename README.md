@@ -74,7 +74,7 @@ Participant data will not be analyzed during the workshop (that takes more time 
 |               |                                                           |      |
 
 # Presentations 
-Work in progress, a link will be up soon! 
+Link to the presentations from workshop  https://iu.box.com/s/ntfcr61kqrv4m74uwitk7a7i2bdzwlg3
 
 # Contact us 
 If you have any questions, email us at help@ncgas.org.  \
