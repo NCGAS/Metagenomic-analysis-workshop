@@ -17,7 +17,7 @@ This workshop is geared for beginners, but basic Unix commands will not be cover
 If you are working on a Windows machine, make sure to have Putty (https://www.putty.org/), or have Bash Desktop app. 
 
 Beginner tutorials in Linux (bash) can be found here: \
-Getting Started on Unix Walkthrough (pdf) (http://pages.iu.edu/~ss93/tutorials/GettingStartedonUnixWalkthrough.pdf)\
+Getting Started on Unix Walkthrough (pdf) (http://pages.iu.edu/~ss93/tutorials/GettingStartedonUnixWalkthrough.pdf) \
 Code Academy (https://www.codecademy.com/catalog/subject/all) 
 
 # Objectives
