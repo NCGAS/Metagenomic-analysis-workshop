@@ -44,9 +44,9 @@ at the job script and make sure the email and path is set correctly before you s
         less spades.sh
         less megahit.sh 
 
-To run the job script, the command is
+To run/submit the job script, the command is
         
-        qusb spades.sh
+        qsub spades.sh
         qsub megahit.sh 
 
 Wait for these jobs to complete. Take a look at the job logs before you continue. 
